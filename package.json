@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "Node.js demo of DigitalOcean Serverless Inference (chat, streaming, prompt caching)",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
+    "start": "node server.js",
     "chat": "node index.js chat",
     "stream": "node index.js stream",
     "cache": "node index.js cache"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "express": "^4.21.1",
     "openai": "^4.68.0"
   }
 }
